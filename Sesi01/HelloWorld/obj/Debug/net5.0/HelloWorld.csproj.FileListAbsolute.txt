@@ -1,0 +1,16 @@
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.exe
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.deps.json
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.json
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.runtimeconfig.dev.json
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.dll
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\ref\HelloWorld.dll
+C:\OCBC-Intemship\Sesi01\HelloWorld\bin\Debug\net5.0\HelloWorld.pdb
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.AssemblyReference.cache
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfoInputs.cache
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.AssemblyInfo.cs
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.csproj.CoreCompileInputs.cache
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.dll
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\ref\HelloWorld.dll
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.pdb
+C:\OCBC-Intemship\Sesi01\HelloWorld\obj\Debug\net5.0\HelloWorld.genruntimeconfig.cache
