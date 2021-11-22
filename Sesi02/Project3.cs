@@ -22,6 +22,5 @@ class Project3
         Console.WriteLine($"Alamat: {alamat}");
         Console.WriteLine($"Umur: {umur} tahun");
         Console.WriteLine("SUDAH DISIMPAN");
-
     }
 }
