@@ -19,7 +19,6 @@ namespace ConsoleApp
             Console.WriteLine($"nilai1 <= nilai 2 : {nilai1 <= nilai2}");
             Console.WriteLine($"nilai1 == nilai 2 : {nilai1 == nilai2}");
             Console.WriteLine($"nilai1 != nilai 2 : {nilai1 != nilai2}");
-
         }
     }
 }
