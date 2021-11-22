@@ -2,26 +2,27 @@ using System;
 
 namespace ConsoleApp
 {
-  public class Program
-  {
-    public static void Main(string[] args)
+    public class Program
     {
-      Console.Write("Enter your age: ");
-      int age = int.Parse(Console.ReadLine());
-      Console.Write("Password: ");
-      string password = Console.ReadLine();
+        public static void Main(string[] args)
+        {
+            Console.Write("Enter your age: ");
+            int age = int.Parse(Console.ReadLine());
+            Console.Write("Password: ");
+            string password = Console.ReadLine();
 
-      bool isAdult = age > 18;
-      bool isPaswordValid = password == "OCBC";
+            bool isAdult = age > 18; // pernyataan 1
+            bool isPaswordValid = password == "OCBC"; // pernyataan 2
 
-      if (isAdult && isPaswordValid)
-      {
-        Console.WriteLine("Welcome to the club");
-      }
-      else
-      {
-        Console.WriteLine("Sorry, try again!");
-      }
+            // menggunakan logika AND
+            if (isAdult && isPaswordValid)
+            {
+                Console.WriteLine("Welcome to the club");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, try again!");
+            }
+        }
     }
-  }
 }
