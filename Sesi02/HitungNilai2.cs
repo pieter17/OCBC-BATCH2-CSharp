@@ -14,7 +14,7 @@ class HitungNilai2
         Console.WriteLine($"nilai1 = {nilai1}");
 
         // menggunakan += untuk mengisi dan menjumlahkan
-        nilai1 += 6;
+        nilai2 += 6;
 
         Console.WriteLine($"nilai2 = {nilai2}");
     }
