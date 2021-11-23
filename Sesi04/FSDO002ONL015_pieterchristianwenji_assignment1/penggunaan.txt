@@ -15,4 +15,4 @@ Alamat : Cimahi
     4. Bila sudah keluar output, bila ingin keluar tekan 'n',  'y' untuk kembali ke menu.
 
 - Link Github
-    https://github.com/pieter17/OCBC-BATCH2-CSharp/tree/main/Sesi04/015_pieterchristianwenji_assignment1
+    https://github.com/pieter17/OCBC-BATCH2-CSharp/tree/main/Sesi04/FSDO002ONL015_pieterchristianwenji_assignment1
