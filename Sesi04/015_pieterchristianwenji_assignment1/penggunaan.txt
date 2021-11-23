@@ -12,7 +12,7 @@ Alamat : Cimahi
         5. Convert Angka Ke String (Menampilkan angka yang telah di convert ke format string).
         6. Palindrome (Mencek apakah kata sebuah palindrome).
     3. Masukan input.
-    4. Bila sudah keluar output, bila ingin keluar tekan 'n', tekan apapun atau 'y' untuk kembali ke menu.
+    4. Bila sudah keluar output, bila ingin keluar tekan 'n',  'y' untuk kembali ke menu.
 
 - Link Github
     https://github.com/pieter17/OCBC-BATCH2-CSharp/tree/main/Sesi04/015_pieterchristianwenji_assignment1

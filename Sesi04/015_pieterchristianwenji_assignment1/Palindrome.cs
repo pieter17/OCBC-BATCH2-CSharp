@@ -17,6 +17,5 @@ class Palindrome
             Console.WriteLine($"Kata '{kata}' adalah palindrome");
         else
             Console.WriteLine($"Kata '{kata}' bukan Palindrome");
-
     }
 }
