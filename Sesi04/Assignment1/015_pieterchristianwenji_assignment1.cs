@@ -34,9 +34,8 @@ class Assignment
             {
                 case "1":
                     {
-                        Console.WriteLine("Anda memilih pilihan Piramida Alphabet");
                         char[] alphabet = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-                        Console.Write("Masukan tinggi piramida: ");
+                        Console.Write("Masukan tinggia piramida: ");
                         int tinggi = Convert.ToInt32(Console.ReadLine());
 
                         for (int i = 1; i <= tinggi; i++)
@@ -45,10 +44,23 @@ class Assignment
                                 Console.Write(" ");
 
                             for (int k = 0; k < i; k++)
-                                Console.Write(alphabet[k]);
+                            {
+                                int temp = k;
+                                if (k >= 26)
+                                    temp -= 26;
+
+                                Console.Write(alphabet[temp]);
+                            }
 
                             for (int m = i - 2; m >= 0; m--)
-                                Console.Write(alphabet[m]);
+                            {
+                                int temp = m;
+                                if (m >= 26)
+                                    temp -= 26;
+
+                                Console.Write(alphabet[temp]);
+
+                            }
 
                             Console.WriteLine();
                         }
@@ -58,20 +70,31 @@ class Assignment
                     }
                 case "2":
                     {
-                        Console.WriteLine("Anda memilih pilihan Piramida Angka");
                         Console.Write("Masukan tinggi piramida: ");
                         int tinggi = Convert.ToInt32(Console.ReadLine());
 
                         for (int i = 1; i <= tinggi; i++)
                         {
-                            for (int j = 1; j <= tinggi - i; j++)
+                            for (int j = 1; j <= (tinggi - i); j++)
                                 Console.Write(" ");
 
                             for (int k = 1; k <= i; k++)
-                                Console.Write(k);
+                            {
+                                int temp = k;
+                                if (k >= 10)
+                                    temp -= 9;
+
+                                Console.Write(temp);
+                            }
 
                             for (int m = (i - 1); m >= 1; m--)
-                                Console.Write(m);
+                            {
+                                int temp = m;
+                                if (m >= 10)
+                                    temp -= 9;
+
+                                Console.Write(temp);
+                            }
 
                             Console.WriteLine();
                         }

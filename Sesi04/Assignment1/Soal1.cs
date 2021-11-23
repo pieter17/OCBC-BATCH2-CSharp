@@ -14,10 +14,23 @@ class Soal1
                 Console.Write(" ");
 
             for (int k = 0; k < i; k++)
-                Console.Write(alphabet[k]);
+            {
+                int temp = k;
+                if (k >= 26)
+                    temp -= 26;
+
+                Console.Write(alphabet[temp]);
+            }
 
             for (int m = i - 2; m >= 0; m--)
-                Console.Write(alphabet[m]);
+            {
+                int temp = m;
+                if (m >= 26)
+                    temp -= 26;
+
+                Console.Write(alphabet[temp]);
+
+            }
 
             Console.WriteLine();
         }
