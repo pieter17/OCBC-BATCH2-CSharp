@@ -34,8 +34,9 @@ class Assignment
             {
                 case "1":
                     {
+                        Console.WriteLine("Anda memilih pilihan Piramida Alphabet");
                         char[] alphabet = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-                        Console.Write("Masukan tinggia piramida: ");
+                        Console.Write("Masukan tinggi piramida: ");
                         int tinggi = Convert.ToInt32(Console.ReadLine());
 
                         for (int i = 1; i <= tinggi; i++)
@@ -57,6 +58,7 @@ class Assignment
                     }
                 case "2":
                     {
+                        Console.WriteLine("Anda memilih pilihan Piramida Angka");
                         Console.Write("Masukan tinggi piramida: ");
                         int tinggi = Convert.ToInt32(Console.ReadLine());
 
@@ -79,6 +81,7 @@ class Assignment
                     }
                 case "3":
                     {
+                        Console.WriteLine("Anda memilih pilihan Faktorial");
                         Console.Write("Masukan angka: ");
                         int num = Convert.ToInt32(Console.ReadLine());
                         int output = 1;
@@ -92,6 +95,7 @@ class Assignment
                     }
                 case "4":
                     {
+                        Console.WriteLine("Anda memilih pilihan Balik Angka");
                         Console.Write("Masukan Angka: ");
                         string nums = Console.ReadLine();
                         string reversedNumber = "";
@@ -105,6 +109,7 @@ class Assignment
                     }
                 case "5":
                     {
+                        Console.WriteLine("Anda memilih pilihan convert angka ke string");
                         Console.Write("Masukan Angka: ");
                         string nums = Console.ReadLine();
                         string[] numbers = new string[10] { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
@@ -121,6 +126,7 @@ class Assignment
                     }
                 case "6":
                     {
+                        Console.WriteLine("Anda memilih pilihan Palindrome");
                         Console.Write("Masukan Kata: ");
                         string kata = Console.ReadLine();
                         int len = kata.Length;
