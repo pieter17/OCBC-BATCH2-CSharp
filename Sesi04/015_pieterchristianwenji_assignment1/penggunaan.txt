@@ -1,0 +1,18 @@
+Nama Lengkap Saya : Pieter Christian Wenji
+Nomor Peserta : FSDO002ONL015
+Alamat : Cimahi
+
+- Cara Pakai
+    1. Masukan naman anda.
+    2. Pilih pilihan program.
+        1. Piramida Alphabet (Membuat piramida dari alphabet abcde).
+        2. Piramida Angka (Membuat piramida dari angka yang di input).
+        3. Faktorial (Menampilkan hasil faktorial dari angka yang di input).
+        4. Balik Angka (Menampilkan angka yang dibalik urutanya yang di input oleh pengguna).
+        5. Convert Angka Ke String (Menampilkan angka yang telah di convert ke format string).
+        6. Palindrome (Mencek apakah kata sebuah palindrome).
+    3. Masukan input.
+    4. Bila sudah keluar output, bila ingin keluar tekan 'n', tekan apapun atau 'y' untuk kembali ke menu.
+
+- Link Github
+    https://github.com/pieter17/OCBC-BATCH2-CSharp/tree/main/Sesi04/Assignment1

@@ -10,8 +10,9 @@ class Assignment
         Console.Write("Masukan nama: ");
         string nama = Console.ReadLine();
         Console.WriteLine("=============================================================================================");
-        Console.WriteLine($"Selamat datang {nama}");
+        Console.WriteLine($"Selamat datang {nama} di assignment 1");
         Console.WriteLine("=============================================================================================");
+        Console.WriteLine("Assignment oleh :");
         Console.WriteLine("Nama Lengkap Saya : Pieter Christian Wenji");
         Console.WriteLine("Nomor Peserta : FSDO002ONL015");
         Console.WriteLine("Alamat : Cimahi");
