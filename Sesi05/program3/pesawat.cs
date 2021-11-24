@@ -29,7 +29,10 @@ namespace program3
         public new void terbangtinggi()
         {
             Console.WriteLine($"Pesawat Tempur dengan nama {this.Nama},\n" +
-                            $"yang mempunyai jumlah roda {this.JumlahRoda}, \n" + $"sedang berada pada ketinggian {this.Ketinggian} dengan membawa jumlah penumpang sebanyak {this.JumlahPenumpang} akan meledakan senjata");
+                            $"yang mempunyai jumlah roda {this.JumlahRoda}, \n" +
+                            $"sedang berada pada ketinggian {this.Ketinggian} \n" +
+                            $"dengan membawa jumlah penumpang sebanyak {this.JumlahPenumpang} \n" +
+                            "akan meledakan senjata");
         }
     }
 
