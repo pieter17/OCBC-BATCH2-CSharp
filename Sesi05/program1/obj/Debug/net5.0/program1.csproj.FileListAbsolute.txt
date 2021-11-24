@@ -1,0 +1,16 @@
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\program1.exe
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\program1.deps.json
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\program1.runtimeconfig.json
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\program1.runtimeconfig.dev.json
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\program1.dll
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\ref\program1.dll
+C:\OCBC NISP\Bootcamp\Sesi05\program1\bin\Debug\net5.0\program1.pdb
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.csproj.AssemblyReference.cache
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.GeneratedMSBuildEditorConfig.editorconfig
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.AssemblyInfoInputs.cache
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.AssemblyInfo.cs
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.csproj.CoreCompileInputs.cache
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.dll
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\ref\program1.dll
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.pdb
+C:\OCBC NISP\Bootcamp\Sesi05\program1\obj\Debug\net5.0\program1.genruntimeconfig.cache
