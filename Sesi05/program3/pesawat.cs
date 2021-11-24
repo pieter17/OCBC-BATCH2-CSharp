@@ -26,7 +26,7 @@ namespace program3
     }
     class pesawat_tempur : pesawat
     {
-        public new void terbangtinggi()
+        public void terbangtinggi()
         {
             Console.WriteLine($"Pesawat Tempur dengan nama {this.Nama},\n" +
                             $"yang mempunyai jumlah roda {this.JumlahRoda}, \n" +
