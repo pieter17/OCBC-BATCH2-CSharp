@@ -1,0 +1,212 @@
+----------------
+NamaPeserta   : Pieter Christian Wenji
+Kode Peserta  : FSDO002ONL015
+Tugas         : Assigment 2
+----------------
+
+1. Customers => stores data customer
+CREATE TABLE customers
+(
+    customerNumber        INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
+    customerName          VARCHAR(25),
+    contactLastName       VARCHAR(25),
+    contactFirstName      VARCHAR(25),
+    phone                 VARCHAR(12),
+    addressLine1          VARCHAR(35),
+    addressLine2          VARCHAR(35),
+    city                  VARCHAR(20),
+    state                 VARCHAR(20),
+    postalCode            VARCHAR(5),
+    country               VARCHAR(20),
+    salesRepEmployeNumber INT,
+    creditLimit           FLOAT,
+    FOREIGN KEY (salesRepEmployeNumber) REFERENCES employees (employeeNumber)
+);
+
+INSERT INTO customers(customerName, contactLastName, contactFirstName, phone, addressLine1, addressLine2, city, state,
+                      postalCode, country, salesRepEmployeNumber, creditLimit)
+VALUES ('Ilham', 'Bruce', 'Ilham', '08129381', 'Bandung', 'Cimahi', 'Bandung', 'Jawa Barat', '40331', 'Indonesia', 4,
+        4000000),
+       ('Putri', 'Putri', 'Daya', '0182301803', 'Penang', 'Penang', 'Penang', 'Malay', '23132', 'Malaysia', 5,
+        5000000),
+       ('Steve', 'Steve', 'Michael', '02938109', 'Jakarta', 'Malang', 'Jakarta', 'Jakarta', '41276', 'Indonesia', 5,
+        9000000),
+       ('Maxie', 'Hoppner', 'Samara', '2453944373', 'Asempapak', 'Dongle', 'Ystad', 'ystad', '31231', 'Indonesia', 6,
+        5000000),
+       ('Ashlan', 'Downey', 'Maudie', '6759759804', 'Delareyville', 'Rušanj', 'Pakokku', 'paskda', '21311',
+        'South Africa', 9, 6000000),
+       ('Miguel', 'Kynton', 'Chas', '1088641445', 'Sơn Tịnh', 'Hà Tiên', 'Nanjia', 'nigeria', '29311', 'Vietnam', 8,
+        5000000),
+       ('Jono', 'abram', 'jono', '08231311', 'malang', 'malang', 'malang', 'jawa', '12311', 'indonesia', 7, 5000000),
+       ('Bradney', 'Enderby', 'Wendie', '2204572235', 'Bobrovka', 'Rybczewice', 'Santo Niño', 'Russia', '12313',
+        'Russia', 7, 7000000),
+       ('Maia', 'Scarlon', 'Courtney', '5826757885', 'Baisha', 'Jiangqiao', 'Conceição do Coité', 'xaind', '01231',
+        'China', 4, 10000000),
+       ('Torrence', 'Merredy', 'Baily', '4367372822', 'Gaopai', 'Montpellier', 'Chone', 'china', '21311', 'China', 5,
+        8000000);
+
+2. Products => stores daftar/list model product ( dalam hal ini bisa mobil/motor dll )
+CREATE TABLE products
+(
+    productCode        INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
+    productName        VARCHAR(50),
+    productLine        INT,
+    productScale       VARCHAR(25),
+    productVendor      VARCHAR(25),
+    productDescription VARCHAR(100),
+    quantityInStock    INT,
+    buyPrice           FLOAT,
+    MSRP               FLOAT,
+    FOREIGN KEY (productLine) REFERENCES productlines (productLine)
+);
+
+INSERT INTO products(productName, productLine, productScale, productVendor, productDescription, quantityInStock,
+                     buyPrice, MSRP)
+VALUES ('sandwich Subway', 1, 'Good', 'subway inc.', 'sell sandwich and drinks', 200, 50000, 65000),
+       ('ban Bridgestone', 2, 'Great', 'Bridgestone', 'Ban mobil dan motor', 155, 195000, 250000),
+       ('Wardah', 3, 'Great', 'Wardah', 'kosmetik wanita', 225, 18000, 25000),
+       ('Hot Wheels', 4, 'Great', 'Namco', 'Mainan mobil', 125, 19000, 25000),
+       ('Ikea bed', 5, 'Good', 'IKEA', 'Bed from ikea', 50, 1000000, 950000),
+       ('Intel i9 10', 6, 'Great', 'Intel', 'processor', 200, 4850000, 5000000),
+       ('Razer Headset', 7, 'Great', 'Razer', 'Headset from razer', 100, 1500000, 1750000),
+       ('GTA V', 8, 'Good', 'Rockstar', 'Video games', 250, 250000, 300000),
+       ('Harry Potter', 9, 'Great', 'gramedia', 'Book title Harry Potter', 122, 250000, 255000),
+       ('Rose', 10, 'good', 'bunga', 'rose flower', 100, 12500, 15000);
+	   
+3. Productlines => stores daftar/list kategori product
+CREATE TABLE productlines
+(
+    productLine     INT PRIMARY KEY NOT NULL,
+    textDescription VARCHAR(50),
+    htmlDescription VARCHAR(50),
+    image           VARBINARY(MAX)
+);
+
+INSERT INTO productlines(productLine, textDescription, htmlDescription)
+VALUES (1, 'FOOD AND DRINKS', '<p>FOOD AND DRINKS</p>'),
+       (2, 'SELL THING ABOUT AUTOMOTIF', '<p>SELL THING ABOUT AUTOMOTIF</p>'),
+       (3, 'SELL COSMETIC FOR MAN AND WOMAN', '<p>SELL COSMETIC FOR MAN AND WOMAN</p>'),
+       (4, 'TOYS', '<p>Toys</p>'),
+       (5, 'sell Furniture', '<p>sell Furniture</p>'),
+       (6, 'Hardware Computers', '<p>Hardware Computers</p>'),
+       (7, 'Accseories Computer', '<p>Accseories Computer</p>'),
+       (8, 'Video Games', '<p>Video Games</p>'),
+       (9, 'Books and dicts', '<p>Books and dicts</p>'),
+       (10, 'Plants and flower', '<p>Plants and flowerPlants and flower</p>');
+
+4. Orders => store Order Sales oleh customer
+CREATE TABLE orders
+(
+    orderNumber    INT identity (1,1) PRIMARY KEY NOT NULL,
+    orderDate      DATE,
+    requiredDate   DATE,
+    shippedDate    DATE,
+    status         varchar(8) DEFAULT 'notship',
+    comments       VARCHAR(25),
+    customerNumber INT,
+    FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber)
+);
+
+INSERT INTO orders(orderDate, requiredDate, shippedDate, status, comments, customerNumber)
+VALUES ('2021-11-15', '2021-11-16', '2021-11-17', 'Shipped', 'is Shipping', 1),
+       ('2020-11-28', '2020-12-01', '2020-12-01', 'Shipped', 'no salt', 2),
+       ('2021-08-10', '2021-08-18', '2021-08-19', 'Shipped', 'Wood pack', 3),
+       ('2020-12-15', '2020-12-19', '2020-12-22', 'Shipped', 'no', 9),
+       ('2021-04-29', '2021-04-29', '2021-04-30', 'Shipped', 'no', 6),
+       ('2021-03-09', '2021-03-09', '2021-03-12', 'Shipped', 'wood pack', 4),
+       ('2020-12-09', '2020-12-09', '2020-12-09', 'Shipped', 'express', 3),
+       ('2021-04-14', '2021-04-14', '2021-04-17', 'Shipped', 'no', 5),
+       ('2021-10-30', '2021-10-30', '2021-10-30', 'Shipped', 'same day', 10),
+       ('2021-05-25', '2021-05-27', '2021-05-28', 'Shipped', 'no', 7);
+
+5. OrderDetails => store Item Order sales dalam setiap order sales
+CREATE TABLE orderdetails
+(
+    orderNumber     INT NOT NULL,
+    productCode     INT NOT NULL,
+    quantityOrdered INT,
+    priceEach       FLOAT,
+    orderLineNumber INT,
+    PRIMARY KEY (orderNumber),
+    FOREIGN KEY (orderNumber) REFERENCES orders (orderNumber),
+    FOREIGN KEY (productCode) REFERENCES products (productCode),
+);
+
+INSERT INTO orderdetails(orderNumber, productCode, quantityOrdered, priceEach, orderLineNumber)
+VALUES (1, 2, 100, 65000, 1),
+       (2, 1, 100, 250000, 2),
+       (3, 3, 200, 25000, 3),
+       (4, 6, 1, 5000000, 4),
+       (5, 8, 10, 300000, 5),
+       (6, 9, 7, 255000, 6),
+       (7, 5, 5, 1000000, 7),
+       (8, 10, 100, 12500, 8),
+       (9, 4, 50, 25000, 9),
+       (10, 6, 2, 500000, 10);
+
+6. Payments => store Pembayaran oleh customer sesuai dengan akun pembayaran
+CREATE TABLE payments
+(
+    customerNumber INT,
+    checkNumber    INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
+    paymentDate    DATE,
+    amount         FLOAT,
+    FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber)
+);
+
+INSERT INTO payments(customerNumber, paymentDate, amount)
+VALUES (1, '2021-11-16', 2000000),
+       (3, '2021-08-18', 5000000),
+       (2, '2020-12-01', 500000),
+       (9, '2020-12-19', 900000),
+       (6, '2021-04-30', 7500000),
+       (4, '2021-03-09', 4000000),
+       (3, '2020-12-09', 2350000),
+       (5, '2021-04-14', 750000),
+       (10, '2021-10-30', 6000000),
+       (7, '2021-05-27', 3500000);
+
+7. Employee => store informasi karyawan dalam sebuah organisasi struktur
+CREATE TABLE employees
+(
+    employeeNumber INT IDENTITY (1,1) PRIMARY KEY NOT NULL,
+    lastName       VARCHAR(25),
+    firstName      VARCHAR(25),
+    extension      VARCHAR(20),
+    email          VARCHAR(25),
+    officeCode     CHAR(5),
+    reportsTo      INT REFERENCES employees (employeeNumber),
+    jobTitle       VARCHAR(15),
+    FOREIGN KEY (officeCode) REFERENCES offices (officeCode)
+);
+
+INSERT INTO employees(lastName, firstName, extension, email, officeCode, reportsTo, jobTitle)
+VALUES ('Steve', 'Michael', '13', 'steve@mail.com', '10001', 1, 'Secret'),
+       ('Chntiya', 'Steph', '14', 'cSteph@gmail.com', '20002', 1, 'Staff'),
+       ('Luuk', 'De Jong', '11', 'jong@yahoo.com', '10003', 2, 'Staff'),
+       ('Ajam', 'Vernon', '12', 'vajam0@technorati.com', '10002', 3, 'Technician'),
+       ('Bearcroft', 'Fleming', '3', 'fbearcroft2@nhs.uk', '20001', 2, 'Executive'),
+       ('Privost', 'Tedmund', '12', 'tprivost5@tuttocitta.it', '20005', 3, 'Programmer'),
+       ('Lamburne', 'Nataline', '14', 'nlamburne1@blogger.com', '10005', 1, 'Food');
+
+8. Offices => store data sales office
+CREATE TABLE offices
+(
+    officeCode CHAR(5) PRIMARY KEY NOT NULL,
+    city       VARCHAR(20),
+    country    VARCHAR(20),
+    postalCode VARCHAR(5),
+    territory  VARCHAR(15),
+);
+
+INSERT INTO offices(officeCode, city, country, postalCode, territory)
+VALUES ('10001', 'Bandung', 'Indonesia', '40534', 'Asia Afrika'),
+       ('20002', 'Penang', 'Malaysia', '10212', 'Penang'),
+       ('10002', 'Jakarta', 'Indonesia', '40712', 'Selatan'),
+       ('10003', 'Medan', 'Indonesia', '42103', 'medan'),
+       ('10004', 'Surabaya', 'Indonesia', '40192', 'jawa'),
+       ('10005', 'jayapura', 'indonesia', '48121', 'papua'),
+       ('20001', 'singapore', 'singapore', '29132', 'singapore'),
+       ('20003', 'sydney', 'autralia', '19282', 'sydney'),
+       ('20004', 'johor', 'malaysia', '92310', 'johor'),
+       ('20005', 'johor baru', 'malaysia', '92310', 'johor baru');

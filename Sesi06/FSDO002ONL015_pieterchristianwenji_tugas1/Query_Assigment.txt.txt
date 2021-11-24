@@ -1,7 +1,7 @@
 ----------------
 NamaPeserta   : Pieter Christian Wenji
 Kode Peserta  : FSDO002ONL015
-Tugas         : Assigment 2
+Tugas         : tugas 1
 ----------------
 
 A. Buat Database baru dengan nama staff
