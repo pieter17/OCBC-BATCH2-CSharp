@@ -1,0 +1,105 @@
+----------------
+NamaPeserta   : Pieter Christian Wenji
+Kode Peserta  : FSDO002ONL015
+Tugas         : Assigment 2
+----------------
+
+A. Buat Database baru dengan nama staff
+    CREATE DATABASE STAFF;
+-------------------------------------------------------------------------------------------------------------------
+B. Buat Table data_staff
+    CREATE TABLE DATA_STAFF
+    (
+        NIK       INT PRIMARY KEY,
+        NAMA      VARCHAR(50)  NULL,
+        ALAMAT    VARCHAR(200) NULL,
+        HANDPHONE VARCHAR(15)  NULL
+    );
+-------------------------------------------------------------------------------------------------------------------
+C. Masukkan data ke dalam table data_staff
+    INSERT INTO DATA_STAFF (NIK, NAMA, ALAMAT, HANDPHONE)
+    VALUES (1001, 'ASEP', 'BANDUNG', '081234123914');
+-------------------------------------------------------------------------------------------------------------------
+D. Masukkan lebih dari 1 data ke dalam table data masih dalam table diatas
+    INSERT INTO DATA_STAFF (NIK, NAMA, ALAMAT, HANDPHONE)
+    VALUES (1002, 'DANI', 'JAKARTA', '082980112930'),
+        (1003, 'BUDI', 'SURABAYA', '082431764901');
+-------------------------------------------------------------------------------------------------------------------
+E. Tambahkan kolom baru pada table data_staff yaitu joindate sekaligus masukan 1 data kedalam table data_staff
+    ALTER TABLE DATA_STAFF
+        ADD JOINDATE DATE;
+
+    INSERT INTO DATA_STAFF (NIK, NAMA, ALAMAT, HANDPHONE,JOINDATE)
+    VALUES (1004, 'ILHAM', 'BANDUNG', '081234123914','2021-11-22');
+
+    UPDATE DATA_STAFF
+    SET JOINDATE = '2021-11-22'
+    WHERE NIK = 1001;
+
+    UPDATE DATA_STAFF
+    SET JOINDATE = '2021-10-17'
+    WHERE NIK = 1002;
+    UPDATE DATA_STAFF
+    SET JOINDATE = '2021-10-18'
+    WHERE NIK = 1003;
+    UPDATE DATA_STAFF
+    SET JOINDATE = '2021-10-19'
+    WHERE NIK = 1004;
+-------------------------------------------------------------------------------------------------------------------
+F. Tampilkan 2 data SQL kalian sekarang 
+    SELECT TOP 2 *
+    FROM DATA_STAFF;
+-------------------------------------------------------------------------------------------------------------------
+G. Tampilkan 3 data SQL kalian sekarang 
+    SELECT TOP 3 *
+    FROM DATA_STAFF;
+-------------------------------------------------------------------------------------------------------------------
+H. Buat Table baru staffoutsource dengan isi yang sama seperti data_staff
+    CREATE TABLE STAFFOUTSOURCE
+    (
+        NIK       INT PRIMARY KEY,
+        NAMA      VARCHAR(50)  NULL,
+        ALAMAT    VARCHAR(200) NULL,
+        HANDPHONE VARCHAR(15)  NULL,
+        JOINDATE DATE NULL
+    );
+
+    INSERT INTO STAFFOUTSOURCE (NIK, NAMA, ALAMAT, HANDPHONE, JOINDATE)
+    SELECT NIK, NAMA, ALAMAT, HANDPHONE, JOINDATE 
+    FROM DATA_STAFF;
+-------------------------------------------------------------------------------------------------------------------
+I. Masukkan 10 data baru ke table staffoutsource
+    INSERT INTO STAFFOUTSOURCE (NIK, NAMA, ALAMAT, HANDPHONE, JOINDATE)
+    VALUES (1005, 'STEVE', 'BANDUNG', '0212313131', '2021-01-24'),
+        (1006, 'MAIKEL', 'JAKARATA', '082431134901', '2020-06-13'),
+        (1007, 'BUDI', 'SURABAYA', '082431764901', '2021-11-24'),
+        (1008, 'STEPHANIE', 'MEDAN', '293109831', '2019-12-12'),
+        (1009, 'ILHAM', 'BANDUNG', '90193910', '2021-10-17'),
+        (1010, 'BEDEDE', 'BOGOR', '08231831', '2020-08-18'),
+        (1011, 'ILHAM 2', 'BANDUNG', '90193910', '2021-10-01'),
+        (1012, 'NINI', 'KALIMANTAN', '0823810123', '2020-11-11'),
+        (1013, 'NANA', 'KALIMANTAN', '0823810124', '2021-11-11'),
+        (0014, 'LISA', 'SULEWESI', '802198301', '2021-01-05');
+-------------------------------------------------------------------------------------------------------------------
+J. Tampilkan data pada 2 Table yang sudah kalian buat dengan joindate yang sama
+    SELECT *
+    FROM DATA_STAFF
+            INNER JOIN STAFFOUTSOURCE
+                        ON DATA_STAFF.JOINDATE = STAFFOUTSOURCE.JOINDATE;
+-------------------------------------------------------------------------------------------------------------------
+K. Tampilkan seluruh data sebelah kanan yang sama pada table staff_outsource
+    SELECT *
+    FROM STAFFOUTSOURCE
+            RIGHT JOIN DATA_STAFF
+                        ON STAFFOUTSOURCE.NIK = DATA_STAFF.NIK;
+-------------------------------------------------------------------------------------------------------------------
+L. Tampilkan seluruh data staff sebelah kiri yang punya nilai tidak sama akan bernilai null
+    SELECT *
+    FROM STAFFOUTSOURCE
+            LEFT JOIN DATA_STAFF
+                    ON STAFFOUTSOURCE.NIK = DATA_STAFF.NIK;
+-------------------------------------------------------------------------------------------------------------------				   
+M. Tampilkan seluruh data antara 2 tabel baik itu tidak punya kesamaan dan bernilai null.
+    SELECT * FROM DATA_STAFF
+    UNION
+    SELECT * FROM STAFFOUTSOURCE;
