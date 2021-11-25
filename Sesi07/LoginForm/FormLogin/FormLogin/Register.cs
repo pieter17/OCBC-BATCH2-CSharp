@@ -45,8 +45,6 @@ namespace FormLogin
             result = MessageBox.Show(message, caption, buttons);
             if (result == DialogResult.Yes)
             {
-                //string query = "insert into user_info(names, username, password) values(@names, @username,@password)";
-                //db.tambahRegister(query, nama, username, password);
                 db.Execute("INSERT INTO `user_info` (`id`, `names`, `username`, `password` ) VALUES (NULL, '" +
                            txtName.Text + "', '" + txtUsername.Text + "', '" + txtPassword.Text + "')");
                 MessageBox.Show("Berhasil Register Data...", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
