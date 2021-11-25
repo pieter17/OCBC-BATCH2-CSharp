@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi09\\Kantor_WebApi\\Kantor_WebAPI\\Kantor_WebAPI.csproj": {}
+    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj": {}
   },
   "projects": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi09\\Kantor_WebApi\\Kantor_WebAPI\\Kantor_WebAPI.csproj": {
+    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi09\\Kantor_WebApi\\Kantor_WebAPI\\Kantor_WebAPI.csproj",
-        "projectName": "Kantor_WebAPI",
-        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi09\\Kantor_WebApi\\Kantor_WebAPI\\Kantor_WebAPI.csproj",
+        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj",
+        "projectName": "TodoApp",
+        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj",
         "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi09\\Kantor_WebApi\\Kantor_WebAPI\\obj\\",
+        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,15 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "MySql.Data": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.27, )"
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
