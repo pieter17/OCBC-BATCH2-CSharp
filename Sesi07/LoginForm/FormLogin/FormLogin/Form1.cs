@@ -27,7 +27,7 @@ namespace FormLogin
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            db.ExecuteSelect("SELECT * FROM `user_info` where username='"+txtUsername.Text+"' and password ='"+txtPassword.Text+"'");
+            db.ExecuteSelect("SELECT * FROM `user_info` where username='" + txtUsername.Text + "' and password ='" + txtPassword.Text + "'");
 
             if (db.Count() == 1)
             {
