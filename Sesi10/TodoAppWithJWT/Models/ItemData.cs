@@ -1,4 +1,4 @@
-namespace TodoApp.Models
+﻿namespace TodoAppWithJWT.Models
 {
     public class ItemData
     {

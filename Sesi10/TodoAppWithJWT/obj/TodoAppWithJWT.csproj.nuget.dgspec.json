@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj": {}
+    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj": {}
   },
   "projects": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj": {
+    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj",
-        "projectName": "TodoApp",
-        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj",
+        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
+        "projectName": "TodoAppWithJWT",
+        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
         "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\obj\\",
+        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.12, )"
