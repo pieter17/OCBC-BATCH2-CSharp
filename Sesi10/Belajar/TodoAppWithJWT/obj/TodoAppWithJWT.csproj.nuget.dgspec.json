@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj": {}
+    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\Belajar\\TodoAppWithJWT\\TodoAppWithJWT.csproj": {}
   },
   "projects": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj": {
+    "C:\\OCBC NISP\\Bootcamp\\Sesi10\\Belajar\\TodoAppWithJWT\\TodoAppWithJWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
+        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\Belajar\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
         "projectName": "TodoAppWithJWT",
-        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
+        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\Belajar\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
         "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\obj\\",
+        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\Belajar\\TodoAppWithJWT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\piete\\AppData\\Roaming\\NuGet\\NuGet.Config",

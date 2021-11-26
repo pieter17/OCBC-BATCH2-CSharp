@@ -41,11 +41,12 @@ namespace TodoAppWithJWT.Controllers
                 {
                     return BadRequest(new RegistrationResponse()
                     {
-                        Errors = new List<string>() {"Email in use"}, Success = false
+                        Errors = new List<string>() { "Email in use" },
+                        Success = false
                     });
                 }
 
-                var newUser = new IdentityUser() {Email = user.Email, UserName = user.Username};
+                var newUser = new IdentityUser() { Email = user.Email, UserName = user.Username };
                 var isCreated = await _userManager.CreateAsync(newUser, user.Password);
                 if (isCreated.Succeeded)
                 {
@@ -114,7 +115,8 @@ namespace TodoAppWithJWT.Controllers
                 {
                     return BadRequest(new RegistrationResponse()
                     {
-                        Errors = new List<string>() {"Invalid Login Request"}, Success = false
+                        Errors = new List<string>() { "Invalid Login Request" },
+                        Success = false
                     });
                 }
 
@@ -124,7 +126,8 @@ namespace TodoAppWithJWT.Controllers
                 {
                     return BadRequest(new RegistrationResponse()
                     {
-                        Errors = new List<string>() {"Invalid Login Request"}, Success = false
+                        Errors = new List<string>() { "Invalid Login Request" },
+                        Success = false
                     });
                 }
 
