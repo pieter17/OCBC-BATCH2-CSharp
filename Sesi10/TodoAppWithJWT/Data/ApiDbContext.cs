@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using TodoAppWithJWT.Models;
+using TodoApp.Models;
 
-namespace TodoAppWithJWT.Data
+namespace TodoApp.Data
 {
-    public class ApiDbContext : IdentityDbContext
+    public class ApiDbContext : DbContext
     {
         public virtual DbSet<ItemData> Items { get; set; }
 
         public ApiDbContext(DbContextOptions<ApiDbContext> options) : base(options)
         {
+
         }
     }
 }

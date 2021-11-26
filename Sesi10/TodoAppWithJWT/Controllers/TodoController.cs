@@ -1,16 +1,13 @@
-﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TodoAppWithJWT.Data;
-using TodoAppWithJWT.Models;
+using TodoApp.Data;
+using TodoApp.Models;
 
-namespace TodoAppWithJWT.Controllers
+namespace TodoApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class TodoController : ControllerBase
     {
         private readonly ApiDbContext _context;
@@ -35,10 +32,9 @@ namespace TodoAppWithJWT.Controllers
                 await _context.Items.AddAsync(data);
                 await _context.SaveChangesAsync();
 
-                return CreatedAtAction("GetItem", new {data.Id}, data);
+                return CreatedAtAction("GetItem", new { data.Id }, data);
             }
-
-            return new JsonResult("Something went worng") {StatusCode = 500};
+            return new JsonResult("Something went worng") { StatusCode = 500 };
         }
 
         [HttpGet("{id}")]

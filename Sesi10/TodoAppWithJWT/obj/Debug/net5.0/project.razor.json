@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoAppWithJWT\\TodoAppWithJWT.csproj",
+  "FilePath": "c:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "TodoAppWithJWT",
+  "RootNamespace": "TodoApp",
   "Documents": [],
   "SerializationFormat": "0.2"
 }
