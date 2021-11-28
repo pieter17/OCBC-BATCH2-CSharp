@@ -47,10 +47,11 @@ namespace Kantor_WebAPI.Models
             return list;
         }
 
+
         public List<EmployeeItem> GetEmployee(string id)
         {
             List<EmployeeItem> list = new List<EmployeeItem>();
-
+        
             using (MySqlConnection conn = GetConnection())
             {
                 conn.Open();
@@ -70,31 +71,9 @@ namespace Kantor_WebAPI.Models
                     }
                 }
             }
-
+        
             return list;
         }
-
-        //public async Task<IActionResult> CreateEmployee(string nama, string jenisK, string alamat)
-        //{
-        //    using (MySqlConnection conn = GetConnection())
-        //    {
-        //        try
-        //        {
-        //conn.Open();
-        //            MySqlCommand cmd = new MySqlCommand("INSERT INTO employees(nama,jenis_kelamin,alamat) VALUES (@nama,@jenis_kelamin,@alamat)", conn);
-        //cmd.Parameters.AddWithValue("@nama", nama);
-        //            cmd.Parameters.AddWithValue("@jenis_kelamin", jenisK);
-        //            cmd.Parameters.AddWithValue("@alamat", alamat);
-        //        }
-        //        catch (Exception e)
-        //        {
-        //            return new JsonResult("Something went wrong") {StatusCode = 500};
-        //        }
-
-        //        return new JsonResult("created") {StatusCode = 200};
-
-        //    }
-        //}
 
         public string InsertEmployee(EmployeeItem item)
         {

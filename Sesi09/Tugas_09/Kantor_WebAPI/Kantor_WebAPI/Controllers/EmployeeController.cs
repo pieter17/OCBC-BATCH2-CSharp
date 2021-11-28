@@ -20,7 +20,7 @@ namespace Kantor_WebAPI.Controllers
             this._context = context;
         }
 
-        // GET: api/eployee
+        // GET: api/employee
         public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItems()
         {
             _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
