@@ -31,7 +31,7 @@ namespace TestProject1
             {
                 Id = 1,
                 Name = "JK",
-                Desgination = "SDE"
+                Designation = "SDE"
             };
             mock.Setup(p => p.GetEmployeeDetails(1)).ReturnsAsync(employeeDTO);
             EmployeeController emp = new EmployeeController(mock.Object);
