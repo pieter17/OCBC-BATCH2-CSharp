@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0lAVUTvhF49s8YXPEYNzWjQt8yvm/cHROBKzyhH72hoO0LuVo9hKvu2O1dzYCE3s5ZBlDJCnPjA2iAVvgu1vEA==",
+  "dgSpecHash": "szUk2ZD6lDPr7ZT2KMN4lrpmzWqey8tvyhNwku7n85ein91VF1YXzwJO+2OZu7GnASAAeoqYTfDZ8WyglPRkIw==",
   "success": true,
-  "projectFilePath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assigment3\\MovieApi\\MovieApi.csproj",
+  "projectFilePath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assignment3\\MovieApi\\MovieApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piete\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\piete\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.12\\microsoft.aspnetcore.jsonpatch.5.0.12.nupkg.sha512",

@@ -5897,11 +5897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assigment3\\MovieApi\\MovieApi.csproj",
+      "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assignment3\\MovieApi\\MovieApi.csproj",
       "projectName": "MovieApi",
-      "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assigment3\\MovieApi\\MovieApi.csproj",
+      "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assignment3\\MovieApi\\MovieApi.csproj",
       "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-      "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assigment3\\MovieApi\\obj\\",
+      "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\FSDO002ONL015_pieterchristianwenji_Assignment3\\MovieApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\piete\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fuG6L9stKzD+GhoGmRU9sbF1abcEh6+RPAEfz9ILh2VbI5bduFj07N+p/06FtVxn97X1cvOv7yACR9rTOpGH5A==",
+  "dgSpecHash": "3fORExKJhiYvqjdTcDC5hJrZyHUZAjR86dXK/4qDjibTM3dnrZI110Z7rjm1GwyGq/64FaMA3e02+g2BzjTevA==",
   "success": true,
-  "projectFilePath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\TodoApp\\TodoApp.csproj",
+  "projectFilePath": "C:\\OCBC NISP\\Bootcamp\\Sesi10\\Belajar\\TodoApp\\TodoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piete\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\piete\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
