@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
+    "C:\\OCBC NISP\\Bootcamp\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {}
   },
   "projects": {
-    "C:\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
+    "C:\\OCBC NISP\\Bootcamp\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "projectName": "UnitTest_Mock",
-        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
+        "projectPath": "C:\\OCBC NISP\\Bootcamp\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
         "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
+        "outputPath": "C:\\OCBC NISP\\Bootcamp\\sesi12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
