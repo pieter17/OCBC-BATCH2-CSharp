@@ -1,0 +1,7 @@
+kode peserta : FSDO002ONL015
+Nama Peserta : Pieter Chrsitian Wenji
+Tugas : Final Project
+
+GitHub link (buat deploy Heroku) : https://github.com/pieter17/paymentfinalapi
+Github link : https://github.com/pieter17/OCBC-BATCH2-CSharp/tree/main/Sesi14
+Heroku link : https://paymentapifinal.herokuapp.com/
