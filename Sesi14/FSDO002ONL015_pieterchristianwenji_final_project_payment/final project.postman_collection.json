@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"pieter6@email.com\",\r\n    \"email\": \"pieter6@email.com\",\r\n    \"password\": \"Password123!\"\r\n}",
+					"raw": "{\r\n    \"username\": \"pieter8\",\r\n    \"email\": \"pieter8@email.com\",\r\n    \"password\": \"Password123!\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -50,7 +50,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\": \"pieter6@email.com\",\r\n    \"password\": \"Password123!\"\r\n}",
+					"raw": "{\r\n    \"email\": \"pieter8@email.com\",\r\n    \"password\": \"Password123!\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -81,7 +81,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6ImZiNDZhYjNkLTJmNWQtNGVhZC1hYjc0LTQyYjU5ZWYwYmM3YiIsIm5iZiI6MTYzODM0NDAxMCwiZXhwIjoxNjM4MzQ0NjEwLCJpYXQiOjE2MzgzNDQwMTB9.R3chZp6WXD5YnvCunAntZvJjA_kYwuJU5KyJ4hd7fxQ\",\r\n    \"refreshToken\": \"FBKWIPGGNOIRDUSHHLKAECIGJAXQOXCAPONfc359b1a-6f5f-4993-a269-923afc376986\"\r\n}",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFjNzU1YjIyLTc3ZjctNDY1ZC1hMDczLTUwYzM5OWRlNjhiZSIsImVtYWlsIjoicGlldGVyOEBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI4QGVtYWlsLmNvbSIsImp0aSI6IjMyNWM0NDFhLTdkMzgtNGY0OS05ZmViLWNhNDY2OTE0YWU4YyIsIm5iZiI6MTYzODQzMDc2NCwiZXhwIjoxNjM4NDMxMzY0LCJpYXQiOjE2Mzg0MzA3NjR9.24k0gGwMvnDPVTDLELMvKZC5KCAKN9zrP9zMxK5nfCk\",\r\n    \"refreshToken\": \"CGVSTJPJRBFIRQDKQAMFBQNEMKGAYLZDLXH91ca588f-7f9a-4d48-862d-ca7f45d0c557\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -108,12 +108,23 @@
 		{
 			"name": "get all payments",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFjNzU1YjIyLTc3ZjctNDY1ZC1hMDczLTUwYzM5OWRlNjhiZSIsImVtYWlsIjoicGlldGVyOEBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI4QGVtYWlsLmNvbSIsImp0aSI6IjMyNWM0NDFhLTdkMzgtNGY0OS05ZmViLWNhNDY2OTE0YWU4YyIsIm5iZiI6MTYzODQzMDc2NCwiZXhwIjoxNjM4NDMxMzY0LCJpYXQiOjE2Mzg0MzA3NjR9.24k0gGwMvnDPVTDLELMvKZC5KCAKN9zrP9zMxK5nfCk",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6IjQyNDZjMzU3LTY4NGQtNGIyZC04NDMxLTBjM2RmNWQ3ZWU1ZCIsIm5iZiI6MTYzODM0MjkxOCwiZXhwIjoxNjM4MzQzNTE4LCJpYXQiOjE2MzgzNDI5MTh9.wlaU09UyAekC5OgW9epjC698Lj2PJqaoSQkbP3Af6eE",
-						"type": "text"
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6ImMxMDBkZmY1LTcwNWQtNGRhMC04OGQ3LTY0MjhkMjI2ZWE2OSIsIm5iZiI6MTYzODQxMjQzMSwiZXhwIjoxNjM4NDEzMDMxLCJpYXQiOjE2Mzg0MTI0MzF9.sFD6s2S2UT7GgohDBrW7cffHLmhqlOjgrWkEe9LCtGo",
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"url": {
@@ -139,7 +150,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6ImNkNWY0ZWNhLTY4ZmQtNGVjNy04MWQ4LWQzYzYyNTQxNjQzOSIsIm5iZiI6MTYzODM0MjI5NSwiZXhwIjoxNjM4MzQyODk1LCJpYXQiOjE2MzgzNDIyOTV9.arKO82ipIU4i0RCZVA3jqVoncfCnIXy5i6vuaYWogzM",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFjNzU1YjIyLTc3ZjctNDY1ZC1hMDczLTUwYzM5OWRlNjhiZSIsImVtYWlsIjoicGlldGVyOEBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI4QGVtYWlsLmNvbSIsImp0aSI6IjMyNWM0NDFhLTdkMzgtNGY0OS05ZmViLWNhNDY2OTE0YWU4YyIsIm5iZiI6MTYzODQzMDc2NCwiZXhwIjoxNjM4NDMxMzY0LCJpYXQiOjE2Mzg0MzA3NjR9.24k0gGwMvnDPVTDLELMvKZC5KCAKN9zrP9zMxK5nfCk",
 						"type": "text"
 					}
 				],
@@ -167,7 +178,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6ImNkNWY0ZWNhLTY4ZmQtNGVjNy04MWQ4LWQzYzYyNTQxNjQzOSIsIm5iZiI6MTYzODM0MjI5NSwiZXhwIjoxNjM4MzQyODk1LCJpYXQiOjE2MzgzNDIyOTV9.arKO82ipIU4i0RCZVA3jqVoncfCnIXy5i6vuaYWogzM",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFjNzU1YjIyLTc3ZjctNDY1ZC1hMDczLTUwYzM5OWRlNjhiZSIsImVtYWlsIjoicGlldGVyOEBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI4QGVtYWlsLmNvbSIsImp0aSI6IjMyNWM0NDFhLTdkMzgtNGY0OS05ZmViLWNhNDY2OTE0YWU4YyIsIm5iZiI6MTYzODQzMDc2NCwiZXhwIjoxNjM4NDMxMzY0LCJpYXQiOjE2Mzg0MzA3NjR9.24k0gGwMvnDPVTDLELMvKZC5KCAKN9zrP9zMxK5nfCk",
 						"type": "text"
 					}
 				],
@@ -203,13 +214,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6IjQyNDZjMzU3LTY4NGQtNGIyZC04NDMxLTBjM2RmNWQ3ZWU1ZCIsIm5iZiI6MTYzODM0MjkxOCwiZXhwIjoxNjM4MzQzNTE4LCJpYXQiOjE2MzgzNDI5MTh9.wlaU09UyAekC5OgW9epjC698Lj2PJqaoSQkbP3Af6eE",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFjNzU1YjIyLTc3ZjctNDY1ZC1hMDczLTUwYzM5OWRlNjhiZSIsImVtYWlsIjoicGlldGVyOEBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI4QGVtYWlsLmNvbSIsImp0aSI6IjMyNWM0NDFhLTdkMzgtNGY0OS05ZmViLWNhNDY2OTE0YWU4YyIsIm5iZiI6MTYzODQzMDc2NCwiZXhwIjoxNjM4NDMxMzY0LCJpYXQiOjE2Mzg0MzA3NjR9.24k0gGwMvnDPVTDLELMvKZC5KCAKN9zrP9zMxK5nfCk",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"paymentDetailId\": 4,\r\n    \"cardOwnerName\": \"Pieter Wenji\",\r\n    \"cardNumber\": \"5152911421956712\",\r\n    \"expirationDate\": \"2022-05-01\",\r\n    \"securityCode\": \"6789\"\r\n}",
+					"raw": "{\r\n    \"paymentDetailId\": 6,\r\n    \"cardOwnerName\": \"Pieter Wenji\",\r\n    \"cardNumber\": \"5152911421956712\",\r\n    \"expirationDate\": \"2022-04-01\",\r\n    \"securityCode\": \"6789\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -217,7 +228,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://paymentapifinal.herokuapp.com/api/paymentdetail/4",
+					"raw": "https://paymentapifinal.herokuapp.com/api/paymentdetail/6",
 					"protocol": "https",
 					"host": [
 						"paymentapifinal",
@@ -227,7 +238,7 @@
 					"path": [
 						"api",
 						"paymentdetail",
-						"4"
+						"6"
 					]
 				}
 			},
@@ -240,12 +251,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjY5NTU1MWIwLWFiOGYtNGE5Yi1iNTdmLTkwMjkyMWJlMGQ0YiIsImVtYWlsIjoicGlldGVyNkBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI2QGVtYWlsLmNvbSIsImp0aSI6IjQyNDZjMzU3LTY4NGQtNGIyZC04NDMxLTBjM2RmNWQ3ZWU1ZCIsIm5iZiI6MTYzODM0MjkxOCwiZXhwIjoxNjM4MzQzNTE4LCJpYXQiOjE2MzgzNDI5MTh9.wlaU09UyAekC5OgW9epjC698Lj2PJqaoSQkbP3Af6eE",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjFjNzU1YjIyLTc3ZjctNDY1ZC1hMDczLTUwYzM5OWRlNjhiZSIsImVtYWlsIjoicGlldGVyOEBlbWFpbC5jb20iLCJzdWIiOiJwaWV0ZXI4QGVtYWlsLmNvbSIsImp0aSI6IjMyNWM0NDFhLTdkMzgtNGY0OS05ZmViLWNhNDY2OTE0YWU4YyIsIm5iZiI6MTYzODQzMDc2NCwiZXhwIjoxNjM4NDMxMzY0LCJpYXQiOjE2Mzg0MzA3NjR9.24k0gGwMvnDPVTDLELMvKZC5KCAKN9zrP9zMxK5nfCk",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://paymentapifinal.herokuapp.com/api/paymentdetail/4",
+					"raw": "https://paymentapifinal.herokuapp.com/api/paymentdetail/6",
 					"protocol": "https",
 					"host": [
 						"paymentapifinal",
@@ -255,7 +266,7 @@
 					"path": [
 						"api",
 						"paymentdetail",
-						"4"
+						"6"
 					]
 				}
 			},

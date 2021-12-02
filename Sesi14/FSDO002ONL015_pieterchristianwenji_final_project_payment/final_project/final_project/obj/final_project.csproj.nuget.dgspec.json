@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code-playground\\dotnet\\final_project\\final_project\\final_project.csproj": {}
+    "C:\\OCBC NISP\\Bootcamp\\Sesi14\\FSDO002ONL015_pieterchristianwenji_final_project_payment\\final_project\\final_project\\final_project.csproj": {}
   },
   "projects": {
-    "C:\\code-playground\\dotnet\\final_project\\final_project\\final_project.csproj": {
+    "C:\\OCBC NISP\\Bootcamp\\Sesi14\\FSDO002ONL015_pieterchristianwenji_final_project_payment\\final_project\\final_project\\final_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code-playground\\dotnet\\final_project\\final_project\\final_project.csproj",
+        "projectUniqueName": "C:\\OCBC NISP\\Bootcamp\\Sesi14\\FSDO002ONL015_pieterchristianwenji_final_project_payment\\final_project\\final_project\\final_project.csproj",
         "projectName": "final_project",
-        "projectPath": "C:\\code-playground\\dotnet\\final_project\\final_project\\final_project.csproj",
+        "projectPath": "C:\\OCBC NISP\\Bootcamp\\Sesi14\\FSDO002ONL015_pieterchristianwenji_final_project_payment\\final_project\\final_project\\final_project.csproj",
         "packagesPath": "C:\\Users\\piete\\.nuget\\packages\\",
-        "outputPath": "C:\\code-playground\\dotnet\\final_project\\final_project\\obj\\",
+        "outputPath": "C:\\OCBC NISP\\Bootcamp\\Sesi14\\FSDO002ONL015_pieterchristianwenji_final_project_payment\\final_project\\final_project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\piete\\AppData\\Roaming\\NuGet\\NuGet.Config",
